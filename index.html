@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ern5050 - Quiz Game with Wallet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .quiz-box, .wallet-box, .ads-box, .withdraw-box {
+      background: #222;
+      padding: 20px;
+      margin: 15px auto;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #4caf50;
+      color: white;
+      font-size: 16px;
+    }
+    button:disabled {
+      background: gray;
+    }
+    .banner-ad {
+      background: #444;
+      color: #ccc;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+    <script type="text/javascript">
+	atOptions = {
+		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
+<script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script>
+  <h1>Ern5050 🎮</h1>
+
+  <div class="banner-ad"><script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script></div>
+
+  <div class="quiz-box">
+    <h2 id="question">Loading question...</h2>
+    <div id="options"></div>
+  </div>
+
+  <div class="ads-box">
+    <h2>Watch Ad & Earn</h2>
+    <button onclick="watchAd()">📺 Watch Ad</button>
+  </div>
+
+  <div class="wallet-box">
+    <h2>Wallet Balance: $<span id="wallet">0.00</span></h2>
+  </div>
+
+  <div class="withdraw-box">
+    <h2>Withdraw</h2>
+    <button onclick="withdraw()">Withdraw</button>
+    <p id="withdraw-msg"></p>
+  </div>
+
+  <script>
+    // Quiz Questions
+    const questions = [
+      { q: "What is the capital of France?", options: ["Paris", "London", "Rome", "Berlin"], answer: 0 },
+      { q: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Saturn"], answer: 1 },
+      { q: "Who wrote 'Hamlet'?", options: ["Shakespeare", "Homer", "Tolstoy", "Milton"], answer: 0 }
+    ];
+
+    let currentQ = 0;
+    let wallet = 0;
+
+    // List of ad links (you can add as many as you want here)
+const adLinks = [
+  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322",
+  "https://www.effectivecpmrate.com/pvr01zaax3?key=e3ac46719c70cb3ee58ffcb85d2adddd",
+  "https://www.effectivecpmrate.com/aygde7w5?key=809ab996cfaafdcdf2e9aaa4ad3339cf",
+  "https://www.effectivecpmrate.com/m4cy6146fd?key=63429ec98846cecbced07a045789d2ea",
+  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322",
+  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322"
+];
+
+
+    // Load quiz question
+    function loadQuestion() {
+      if (currentQ >= questions.length) {
+        document.getElementById("question").innerText = "Quiz Finished!";
+        document.getElementById("options").innerHTML = "";
+        return;
+      }
+      const q = questions[currentQ];
+      document.getElementById("question").innerText = q.q;
+      let opts = "";
+      q.options.forEach((opt, i) => {
+        opts += `<button onclick="checkAnswer(${i})">${opt}</button>`;
+      });
+      document.getElementById("options").innerHTML = opts;
+    }
+
+    // Check selected answer
+    function checkAnswer(i) {
+      if (i === questions[currentQ].answer) {
+        alert("✅ Correct!");
+      } else {
+        alert("❌ Wrong!");
+      }
+      currentQ++;
+      loadQuestion();
+    }
+
+    // Simulate watching an ad
+    function watchAd() {
+      // Pick a random ad link from the array
+      const randomAd = adLinks[Math.floor(Math.random() * adLinks.length)];
+      
+      // Open ad in new tab
+      window.open(randomAd, "_blank");
+
+      // After opening ad, reward user with $0.20
+      wallet += 0.20;
+      updateWallet();
+    }
+
+    // Update wallet display
+    function updateWallet() {
+      document.getElementById("wallet").innerText = wallet.toFixed(2);
+    }
+
+    // Handle withdrawal
+    function withdraw() {
+      if (wallet >= 200) {
+        document.getElementById("withdraw-msg").innerText = "✅ Withdrawal request submitted!";
+        wallet = 0;
+        updateWallet();
+      } else {
+        document.getElementById("withdraw-msg").innerText = "❌ Minimum $200 required to withdraw.";
+      }
+    }
+
+    // Initialize first question
+    loadQuestion();
+  </script>
+<script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
+</body>
+</html>
