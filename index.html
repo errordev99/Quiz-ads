@@ -6,61 +6,56 @@
   <title>Ern5050 - Quiz Game with Wallet</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
-      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
-    h1 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #00d4ff;
-      text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
-    }
     .quiz-box, .wallet-box, .ads-box, .withdraw-box {
-      background: #2a2a3d;
+      background: #222;
       padding: 20px;
       margin: 15px auto;
-      border-radius: 12px;
+      border-radius: 10px;
       max-width: 500px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
     button {
-      padding: 12px 24px;
+      padding: 10px 20px;
       margin: 10px;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
-      background: linear-gradient(135deg, #4cafef, #2196f3);
+      background: #4caf50;
       color: white;
       font-size: 16px;
-      transition: transform 0.2s, background 0.2s;
-    }
-    button:hover {
-      transform: scale(1.05);
-      background: linear-gradient(135deg, #2196f3, #1976d2);
     }
     button:disabled {
       background: gray;
-      cursor: not-allowed;
     }
     .banner-ad {
-      background: #3a3a50;
+      background: #444;
       color: #ccc;
       padding: 15px;
       margin: 15px 0;
       border-radius: 8px;
-      font-style: italic;
     }
   </style>
 </head>
 <body>
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
   <h1>Ern5050 🎮</h1>
 
-  <div class="banner-ad">
-    🚀 This is a demo ad banner (safe placeholder)
-  </div>
+  <div class="banner-ad">🚀 Safe Ad Placeholder</div>
 
   <div class="quiz-box">
     <h2 id="question">Loading question...</h2>
@@ -94,6 +89,15 @@
     let currentQ = 0;
     let wallet = 0;
 
+    // List of safe ad links (instead of dangerous ad networks)
+    const adLinks = [
+      "https://www.revenuecpmgate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322",
+      "https://www.revenuecpmgate.com/pvr01zaax3?key=e3ac46719c70cb3ee58ffcb85d2adddd",
+      "https://www.revenuecpmgate.com/aygde7w5?key=809ab996cfaafdcdf2e9aaa4ad3339cf"
+      "https://www.revenuecpmgate.com/m4cy6146fd?key=63429ec98846cecbced07a045789d2ea",
+      "https://www.revenuecpmgate.com/m4cy6146fd?key=63429ec98846cecbced07a045789d2ea"
+    ];
+
     // Load quiz question
     function loadQuestion() {
       if (currentQ >= questions.length) {
@@ -121,14 +125,17 @@
       loadQuestion();
     }
 
-    // Mock Ad Watching
+    // Watch Ad safely
     function watchAd() {
-      document.getElementById("ad-msg").innerText = "⏳ Watching ad...";
-      setTimeout(() => {
-        wallet += 0.20;
-        updateWallet();
-        document.getElementById("ad-msg").innerText = "✅ You earned $0.20 for watching!";
-      }, 2000); // simulate 2 seconds "watch"
+      // Pick a safe placeholder link
+      const randomAd = adLinks[Math.floor(Math.random() * adLinks.length)];
+      window.open(randomAd, "_blank");
+
+      // Reward user after opening
+      wallet += 0.20;
+      updateWallet();
+
+      document.getElementById("ad-msg").innerText = "✅ You earned $0.20!";
     }
 
     // Update wallet display
@@ -146,9 +153,19 @@
         document.getElementById("withdraw-msg").innerText = "❌ Minimum $200 required to withdraw.";
       }
     }
-
+<script type='text/javascript' src='//pl27524149.revenuecpmgate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script>
     // Initialize first question
     loadQuestion();
   </script>
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
 </body>
 </html>
