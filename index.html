@@ -6,57 +6,61 @@
   <title>Ern5050 - Quiz Game with Wallet</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      color: #f5f5f5;
       text-align: center;
       padding: 20px;
     }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #00d4ff;
+      text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+    }
     .quiz-box, .wallet-box, .ads-box, .withdraw-box {
-      background: #222;
+      background: #2a2a3d;
       padding: 20px;
       margin: 15px auto;
-      border-radius: 10px;
+      border-radius: 12px;
       max-width: 500px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     }
     button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       margin: 10px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      background: #4caf50;
+      background: linear-gradient(135deg, #4cafef, #2196f3);
       color: white;
       font-size: 16px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #2196f3, #1976d2);
     }
     button:disabled {
       background: gray;
+      cursor: not-allowed;
     }
     .banner-ad {
-      background: #444;
+      background: #3a3a50;
       color: #ccc;
       padding: 15px;
       margin: 15px 0;
       border-radius: 8px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-    <script type="text/javascript">
-	atOptions = {
-		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
-<script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script>
   <h1>Ern5050 🎮</h1>
 
-  <div class="banner-ad"><script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script></div>
+  <div class="banner-ad">
+    🚀 This is a demo ad banner (safe placeholder)
+  </div>
 
   <div class="quiz-box">
     <h2 id="question">Loading question...</h2>
@@ -66,6 +70,7 @@
   <div class="ads-box">
     <h2>Watch Ad & Earn</h2>
     <button onclick="watchAd()">📺 Watch Ad</button>
+    <p id="ad-msg"></p>
   </div>
 
   <div class="wallet-box">
@@ -88,17 +93,6 @@
 
     let currentQ = 0;
     let wallet = 0;
-
-    // List of ad links (you can add as many as you want here)
-const adLinks = [
-  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322",
-  "https://www.effectivecpmrate.com/pvr01zaax3?key=e3ac46719c70cb3ee58ffcb85d2adddd",
-  "https://www.effectivecpmrate.com/aygde7w5?key=809ab996cfaafdcdf2e9aaa4ad3339cf",
-  "https://www.effectivecpmrate.com/m4cy6146fd?key=63429ec98846cecbced07a045789d2ea",
-  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322",
-  "https://www.effectivecpmrate.com/hbawpjs808?key=b96b5101fc34e35c29b3d5d49fd7a322"
-];
-
 
     // Load quiz question
     function loadQuestion() {
@@ -127,17 +121,14 @@ const adLinks = [
       loadQuestion();
     }
 
-    // Simulate watching an ad
+    // Mock Ad Watching
     function watchAd() {
-      // Pick a random ad link from the array
-      const randomAd = adLinks[Math.floor(Math.random() * adLinks.length)];
-      
-      // Open ad in new tab
-      window.open(randomAd, "_blank");
-
-      // After opening ad, reward user with $0.20
-      wallet += 0.20;
-      updateWallet();
+      document.getElementById("ad-msg").innerText = "⏳ Watching ad...";
+      setTimeout(() => {
+        wallet += 0.20;
+        updateWallet();
+        document.getElementById("ad-msg").innerText = "✅ You earned $0.20 for watching!";
+      }, 2000); // simulate 2 seconds "watch"
     }
 
     // Update wallet display
@@ -159,17 +150,5 @@ const adLinks = [
     // Initialize first question
     loadQuestion();
   </script>
-<script type='text/javascript' src='//pl27524149.effectivecpmrate.com/2d/2e/33/2d2e33099e7f8b9e7e9946b711638ba1.js'></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'fcd37192ec5cb1e4a73fa1e9a6d84f59',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/fcd37192ec5cb1e4a73fa1e9a6d84f59/invoke.js"></script>
 </body>
 </html>
-
